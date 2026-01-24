@@ -1,0 +1,22 @@
+# CORS headers for cross-origin requests
+/*
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: GET, HEAD, OPTIONS
+  Access-Control-Allow-Headers: Content-Type
+
+# Cache control for static assets
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+
+/videos/*
+  Cache-Control: public, max-age=86400
+
+/audio/*
+  Cache-Control: public, max-age=86400
+
+/downloads/*
+  Cache-Control: public, max-age=3600
