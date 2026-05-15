@@ -13,10 +13,10 @@
   Access-Control-Allow-Origin: *
 
 /videos/*
-  Cache-Control: public, max-age=86400
+  Cache-Control: public, max-age=31536000, immutable
 
 /audio/*
-  Cache-Control: public, max-age=86400
+  Cache-Control: public, max-age=31536000, immutable
 
 /downloads/*
   Cache-Control: public, max-age=3600
