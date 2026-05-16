@@ -2,7 +2,7 @@
 
 Static asset hosting for the Wheel of Heaven project.
 
-**URL:** https://assets.wheelofheaven.io
+**URL:** https://assets.wheelofheaven.world
 
 ## Overview
 
@@ -11,7 +11,7 @@ This repository serves as the CDN for multimedia assets used across the Wheel of
 ## Structure
 
 ```
-assets.wheelofheaven.io/
+assets.wheelofheaven.world/
 ├── images/
 │   ├── wiki/           # Wiki article images
 │   ├── timeline/       # Timeline/World Ages images
@@ -33,15 +33,15 @@ Reference assets directly in your HTML/CSS:
 
 ```html
 <!-- Image -->
-<img src="https://assets.wheelofheaven.io/images/wiki/elohim-symbol.webp" alt="Elohim Symbol">
+<img src="https://assets.wheelofheaven.world/images/wiki/elohim-symbol.webp" alt="Elohim Symbol">
 
 <!-- Open Graph -->
-<meta property="og:image" content="https://assets.wheelofheaven.io/images/og/default.jpg">
+<meta property="og:image" content="https://assets.wheelofheaven.world/images/og/default.jpg">
 
 <!-- Font -->
 @font-face {
   font-family: 'CustomFont';
-  src: url('https://assets.wheelofheaven.io/fonts/custom.woff2') format('woff2');
+  src: url('https://assets.wheelofheaven.world/fonts/custom.woff2') format('woff2');
 }
 ```
 
@@ -55,8 +55,8 @@ Access-Control-Allow-Methods: GET, HEAD, OPTIONS
 ```
 
 This allows assets to be loaded from:
-- www.wheelofheaven.io
-- api.wheelofheaven.io
+- www.wheelofheaven.world
+- api.wheelofheaven.world
 - Any other domain
 
 ## Caching
@@ -78,7 +78,7 @@ Hosted on Cloudflare Pages. Deployments trigger automatically on push to `main`.
 1. Connect repository to Cloudflare Pages
 2. Build command: (none - static files)
 3. Build output directory: `/` (root)
-4. Add custom domain: `assets.wheelofheaven.io`
+4. Add custom domain: `assets.wheelofheaven.world`
 
 ## Image Guidelines
 
@@ -90,8 +90,8 @@ Hosted on Cloudflare Pages. Deployments trigger automatically on push to `main`.
 
 ## Consumers
 
-- [www.wheelofheaven.io](https://www.wheelofheaven.io) - Main website
-- [api.wheelofheaven.io](https://api.wheelofheaven.io) - JSON API
+- [www.wheelofheaven.world](https://www.wheelofheaven.world) - Main website
+- [api.wheelofheaven.world](https://api.wheelofheaven.world) - JSON API
 
 ## License
 
