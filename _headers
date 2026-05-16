@@ -8,6 +8,11 @@
 /images/*
   Cache-Control: public, max-age=31536000, immutable
 
+# OG images are unhashed and may be re-rendered when titles/summaries change.
+# 24h TTL with must-revalidate so crawlers and previews pick up updates within a day.
+/images/og/*
+  Cache-Control: public, max-age=86400, must-revalidate
+
 /fonts/*
   Cache-Control: public, max-age=31536000, immutable
   Access-Control-Allow-Origin: *
